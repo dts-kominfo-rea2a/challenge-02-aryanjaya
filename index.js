@@ -46,7 +46,13 @@ function lakukanLooping(arrPegawai) {
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
   */
-  let jumlahPria = null;
+  let jumlahPria = 0;
+
+  for (let index = 0; index < dataYangAkanDilooping.length; index++) {
+    const customer = dataYangAkanDilooping[index];
+
+    if (customer.jenisKelamin === "M") jumlahPria++;
+  }  
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
